@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(hello-world)
+project(HelloWorld)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -11,6 +11,9 @@ set(CMAKE_AUTOMOC ON)
 # (Qt5Widgets finds its own dependencies (QtGui and QtCore)).
 find_package(Qt5Widgets REQUIRED)
 # You should know this line:
-add_executable(hello_world src/main.cpp src/mainwindow.cpp)
+add_executable(label src/label.cc)
 # Link against your Qt5 libraries
-target_link_libraries(hello_world Qt5::Widgets)
+target_link_libraries(label Qt5::Widgets)
+
+add_executable(layouts src/layouts.cc)
+target_link_libraries(layouts Qt5::Widgets)
