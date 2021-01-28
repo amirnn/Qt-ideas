@@ -1,6 +1,3 @@
-# Find the needed Qt5 modules
-# (Qt5Widgets finds its own dependencies (QtGui and QtCore)).
-find_package(Qt5 COMPONENTS Widgets  REQUIRED)
 # You should know this line:
 add_executable(label label.cc)
 # Link against your Qt5 libraries
